@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Aspiring Programmer Survey</title>
+</head>
+<body>
+<!-- Start Container/Document Wrapper -->
+  <div class="container">
+<!-- Start Form Section -->
+  <div id="main">
+<!-- User Story #3: form id="survey-form" -->
+    <form id="survey-form">
+      <!-- Start Header -->
+      <div class="header">
+      <!-- User Story #1: H1 with id="title"  -->
+        <h1 id="title">Aspiring Programmer Survey</h1>
+<!--TODO reformat form header -->
+<!--  <h2 id="subtitle">So You Want To Be A Programmer</h2> -->
+      </div>
+      <!-- End Header -->
+      <div id="section1">
+        <!-- User Story #2: P id="description" with short description of the form. -->
+        <p class="prompt" id="description">Complete this quick survey to tell us why you want to learn how to code</p>
+
+<!-- Begin contact fieldset -->
+        <fieldset>
+          <legend>Contact Information</legend>
+            <p class="prompt"><span>Required fields are followed by<strong><abbr title="required">*</abbr></strong>.</span></p>
+<!-- User Story #4: form has name field with id="name"-->
+<!-- User Story #10: label element name corresponds to input id -->
+<!-- User Story #11: include placeholder text with a description or instructions for each field.-->
+            <div class="default-fields">
+              <label id="name-label" for="name" class="contacts">
+                <strong>First Name</strong>
+                <abbr title="required">*</abbr>
+                <input id="name" type="text" placeholder="Nina" name="first-name" aria-label="Please enter your first name" class="contact-input" required>
+              </label>
+            </div>
+            <div class="default-fields">
+              <label id="last-name-label" for="last-name" class="contacts">
+                <strong>Last Name</strong>
+                <abbr title="required">*</abbr>
+                <input id="last-name" type="text" placeholder="Simone" name="last-name" required pattern="[A-Za-z]+" aria-label="Please enter your last name" class="contact-input">
+              </label>
+            </div>
+<!-- User Story #5 & #6 : form has email field with id="email" with HTML5 validation error if user enters wrong format.-->
+<!-- User Story #10: label element name corresponds to input id -->
+<!-- User Story #11: include placeholder text with a description or instructions for each field.-->
+          <div class="default-fields">
+              <label id="email-label" for="email" class="contacts">
+                <strong>Email</strong>
+                <abbr title="required">*</abbr>
+                <input type="email" name="email" id="email" class="contact-input" required placeholder="example@email.com" aria-label="* Please enter an email address to continue">
+              </label>
+            </div>
+            <div class="default-fields">
+              <label for="phone" class="contacts">
+                <strong>Phone #</strong>
+                <abbr title="required">*</abbr>
+                <input id="phone" type="tel" placeholder="888-555-1515" name="phone" aria-label="Type your answer here" class="contact-input">
+              </label>
+            </div>
+        </fieldset>
+<!-- End contact information fieldset -->
+
+<!-- Begin preferred pronoun fieldset -->
+        <fieldset>
+          <legend>Preferred Pronoun</legend>
+            <p class="question"><strong>What is your preferred pronoun?</strong></p>
+<!-- Begin Radio Pronoun Inputs-->
+<!--User Story #13: one or more radio buttons grouped by name attribute. -->
+
+          <ul class="radio">
+            <li class="labels">
+              <label for="she">
+                <input type="radio" id="she" name="radio-buttons" value="1">
+                She
+              </label>
+            </li>
+            <li class="labels">
+              <label for="he">
+                <input type="radio" id="he" name="radio-buttons" value="2">
+                He
+              </label>
+            </li>
+            <li class="labels">
+              <label for="they">
+                <input type="radio" id="they" name="radio-buttons" value="3">
+                They
+              </label>
+            </li>
+            <li class="labels">
+              <label for="not-listed">
+                <input type="radio" id="not-listed" name="radio-buttons" value="4">
+                A pronoun not listed
+              </label>
+            </li>
+            <li class="labels">
+              <label for="no-preference">
+                <input type="radio" id="no-preference" name="radio-buttons" value="5">
+                No preferred pronoun
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+<!-- End Section 1 - contact and pronoun -->
+
+<!-- Begin Section 2 - education and employment -->
+      <div id="section-2">
+<!-- Begin Dropdown fieldset - User can select multiple options -->
+        <fieldset>
+          <legend>Education and Employment</legend>
+          <div class="label-selects">
+<!--User Story #12: dropdown that has a corresponding id="dropdown" -->
+            <label for="education">
+              <strong>What is your highest level of education completed?</strong>
+            </label><br>
+          </div>
+          <div class="select-options">
+              <select id="dropdown" name="education" size="1">
+                <option disabled value>Select an option</option>
+                <option value="ged">GED</option>
+                <option value="highschool">High School</option>
+                <option value="community">Community College Degree</option>
+                <option value="college">College Degree</option>
+                <option value="grad">Graduate, PhD, or Professional Degree></option>
+              </select>
+          </div>
+<!-- End education selects -->
+<!-- Begin employment selects -->
+          <div class="label-selects">
+            <label for="employment"><strong>What is your current employment status?</strong></label><br>
+          </div>
+          <div id="select-options">
+              <select id="employment" name="employment" size="1" multiple>
+                <option disabled value>Select an option</option>
+                <option value="full-employment">Employed Full-time </option>
+                <option value="part-employment">Employed Part-time</option>
+                <option value="self-employed">Self-Employed</option>
+                <option value="full-student">Student Full-time</option>
+                <option value="part-student">Student Part-time</option>
+                <option value="unemployed">Currently Not Employed</option>
+                <option value="job-search">Currently Seeking Employment</option>
+              </select>
+            </div>
+<!-- End employment selects -->
+        </fieldset>
+<!-- End Dropdowns -->
+      </div>
+<!-- End Section 2 -->
+
+<!-- Begin setion 3 - coding experience and courses-->
+      <div id="section-3">
+        <fieldset>
+          <legend>Experience</legend>
+<!-- Begin Experience Checkboxes -->
+            <div class="boxes">
+              <p><strong>What is your level of coding experience?</strong></p>
+<!-- Begin UL for checkboxes -->
+              <ul id="experience">
+                <li class="checkbox"><label><input name="experience" value="1" type="checkbox" class="experienceLevel">No coding experience</label></li>
+                <li class="checkbox"><label><input name="experience" value="2" type="checkbox" class="experienceLevel">One or more online courses</label></li>
+                <li class="checkbox"><label><input name="experience" value="3" type="checkbox" class="experienceLevel">Completed certificate course</label></li>
+                <li class="checkbox"><label><input name="experience" value="4" type="checkbox" class="experienceLevel">Completed Portfolio projects</label></li>
+                <li class="checkbox"><label><input name="experience" value="5" type="checkbox" class="experienceLevel">I earn income with my skills</label></li>
+              </ul>
+            </div>
+<!-- end coding experience checkboxes-->
+
+<!-- Begin Course Number Section -->
+  <!-- User Story #7: field with id="number". -->
+  <!-- User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error. -->
+  <!-- User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error. -->
+  <!-- User Story #10: label element name corresponds to input id -->
+  <!-- User Story #11: include placeholder text with a description or instructions for each field.-->
+            <div class="numbers">
+              <p>
+                <label id="number-label" for="number"><strong>How many online courses have you completed, if any?</strong>
+                </label><br>
+                  <input id="number" type="number" placeholder="0" name="number" min="0" max="100" required>
+              </p>
+            </div>
+        </fieldset>
+      </div>
+<!-- End Section 3 Employment and Experience -->
+
+<!-- Begin Learning Path Section -->
+      <div id="section-4">
+        <fieldset>
+          <legend>Learning Path</legend>
+<!-- Start Hours Number Section -->
+          <div class="numbers">
+            <p>
+              <label for="hour"><span>How many hours a week can you devote to coursework?</span></label><br>
+              <input id="hour" type="number" placeholder="0" name="hour" min="0" max="20" required>
+            </p>
+          </div>
+<!-- End Hours Number Section-->
+          <div class="boxes">
+            <p><strong>Which of the following best describes your interest in learning learn how to code?</strong></p>
+              <ul id="motivation">
+              <li class="checkbox"><label><input type="checkbox" name="code-reason" value="1">Personal growth</label></li>
+              <li class="checkbox"><label><input type="checkbox" name="code-reason" value="2">Seeking job or career change</label></li>
+              <li class="checkbox"><label><input type="checkbox" name="code-reason" value="3">Increase my income</label></li>
+              <li class="checkbox"><label><input type="checkbox" name="code-reason" value="4">Other</label></li>
+            </ul>
+          </div>
+<!-- End of desire Checkboxes Section -->
+<!-- User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute. -->
+          <div class="boxes">
+            <p>What is your preferred method of instruction? <small> * Check all that apply</small></p>
+            <ul id="method">
+              <li class="checkbox"><label><input type="checkbox" name="instruction" value="1">Free online courses</label></li>
+              <li class="checkbox"><label><input type="checkbox" name="instruction" value="2">Paid online course</label></li>
+              <li class="checkbox"><label><input type="checkbox" name="instruction" value="3">Free classroom instruction</label></li>
+              <li class="checkbox"><label><input type="checkbox" name="instruction" value="4">Paid classroom instruction</label></li>
+              <li class="checkbox"><label><input type="checkbox" name="instruction" value="5">Weekend workshops</label></li>
+              <li class="checkbox"><label><input type="checkbox" name="instruction" value="6">Meetups</label></li>
+              <li class="checkbox"><label><input type="checkbox" name="instruction" value="7">Private tutor</label></li>
+              <li class="checkbox"><label><input type="checkbox" name="instruction" value="15">Other</label></li>
+            </ul>
+          </div>
+<!-- End preferred instruction checkboxes -->
+        </fieldset>
+      </div>
+<!-- End Section 4 -->
+   <!-- User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments. -->
+      <div id="section-5">
+        <fieldset>
+          <legend>Comments:</legend>
+          <div id="comments">
+            <label for="idea">
+              Thank you for taking the time to share your information with us. We'd love to hear your additional comments and insights:
+            </label><br>
+            <textarea id="idea" name="idea"
+              rows="5" cols="50"> Your comments...
+            </textarea>
+          </div>
+        </fieldset>
+      </div>
+<!-- end section 5 -->
+<!-- Begin form submit button -->
+    <div id="my-button">
+      <button id="submit" type="submit">Submit Survey</button>
+    </div>
+<!-- end form submit button -->
+<!-- privacy statement
+TODO create privacy statement and page on portfolio site -->
+    <div class="privacy-message">
+      By continuing, I confirm that I have read and understand the
+      <a class="privacy-terms-link" href="https://loremipsumgenerator.org/">Privacy Policy</a>
+        and
+      <a class="privacy-terms-link" href="https://loremipsumgenerator.org/">Terms of Service</a>
+    </div>
+<!-- End privacy statement -->
+    </form>
+<!-- End interest form -->
+  </div>
+<!-- End Main Form Section -->
+<!-- Begin Footer -->
+  <footer>
+    <div id="copyright">
+      <p><a href="https://github.com/SoCalChristina/My-Portfolio/" target="_blank">&copy; 2019 Christina Tovar</a></p>
+    </div>
+  </footer>
+<!-- End Footer -->
+</div>
+<!-- End Container/Document Wrapper -->
+</body>
+<!-- End Body -->
+</html>

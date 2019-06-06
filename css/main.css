@@ -1,0 +1,221 @@
+html {
+  font-size: 10px;
+  height: 100%;
+  line-height: 1.15;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  background: #7DA2A9;
+  line-height: 1.5;
+  display: block;
+  margin: 0;
+}
+
+h1, h2, h3, #my-button, footer {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+button {
+    margin: 2rem;
+    font-size: 2rem;
+    background-color: #7DA2A9;
+    color: #fff;
+    border-radius: 2rem;
+    width: 200px;
+    padding: 1rem;
+    height: 4.2rem;
+}
+
+#container {
+  display: flex;
+}
+
+/* main div hold the form div */
+#main {
+ text-align: left;
+ font-size: 2rem;
+ margin: auto;
+
+}
+/* form section styles */
+#survey-form {
+  display: block;
+  width: 500px;
+  max-width: 100%;
+  margin: 4rem auto;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+  border: 2px solid #000000;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+  transition: 0.3s;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+}
+
+/* On mouse-over, add a deeper shadow */
+#survey-form:hover {
+  box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.8);
+  }
+
+.header {
+  color: #577c83;
+  line-height: normal;
+  border-bottom: 1px solid #dedede;
+  }
+
+#title {
+  margin: 1rem auto;
+  max-width: 80%;
+}
+
+#subtitle {
+  margin-top: none;
+}
+  /* document header styles */
+  .header, footer #my-button{
+    text-align: center;
+    max-width: 100%;
+    margin: auto;
+  }
+
+#description {
+  padding: 0 1rem;
+  max-width: 80%;
+  text-align: left;
+  margin: 0 auto;;
+}
+
+fieldset {
+  margin: 1rem auto;
+  background-color: #d8e3e5;
+  border-radius: 1rem;
+  max-width: 80%;
+}
+
+
+.default-fields {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.contacts {
+    float: left;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #3e3e3e;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    line-height: 1.15;
+    width: 100%;
+}
+
+.contact-input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  height: 3.4rem;
+  padding: .6rem 1.6rem;
+  font-size: 1.6rem;
+  overflow: visible;
+  margin: 0.5rem 0 0.8rem;
+}
+
+.labels {
+  height: 3.4rem;
+}
+
+select option{
+  font-size: 1.6rem;
+}
+
+#dropdown, #employment{
+  width: 100%;
+}
+
+#experience input {
+  font-size: 1.5rem;
+      padding: .5rem;
+      border: 1px solid #000;
+      border-radius: 0.5rem;
+}
+
+input#hour, input#number {
+font-size: 1.5rem;
+    padding: .5rem;
+    border: 1px solid #000;
+    border-radius: 0.5rem;
+  }
+
+.check {
+  line-height: 3rem;
+}
+
+.boxes input {
+  margin: 0.8rem;
+}
+
+
+textarea {
+    vertical-align: top;
+    font-size: 2rem;
+    color: #a6a6a6;
+    height: 5rem;
+    resize: vertical;
+    width: 100%;
+}
+
+label {
+  width: 100%;
+}
+
+.privacy-message {
+  margin: auto;
+  padding: 3rem 0 1rem;
+  width: 80%;
+  color: #a6a6a6;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.privacy-terms-link {
+  color: #7DA2A9;
+  text-decoration: underline;
+}
+
+footer {
+  padding: 1rem;
+}
+
+#copyright p a {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+
+@media and (min-width: 769px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #survey-form {
+  margin: 0 auto;
+}
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+}
