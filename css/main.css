@@ -74,7 +74,8 @@ button {
 
 #title {
   margin: 1rem auto;
-  max-width: 80%;
+  max-width: 90%;
+  font-size: 3rem;
 }
 
 #subtitle {
@@ -88,7 +89,7 @@ button {
   }
 
 #description {
-  padding: 0 1rem;
+  padding: 1rem 1rem;
   max-width: 80%;
   text-align: left;
   margin: 0 auto;;
@@ -100,7 +101,6 @@ fieldset {
   border-radius: 1rem;
   max-width: 80%;
 }
-
 
 .default-fields {
   display: block;
@@ -132,12 +132,22 @@ fieldset {
 .labels {
   height: 3.4rem;
 }
+.label-selects {
+  font-size: 1.6rem;
+  margin: 1rem auto 0.5rem;
+}
 
-select option{
+.select-options {
+  padding: 0.5rem;
+}
+
+#employment option, #dropdown option {
+  padding: 0.8rem;
   font-size: 1.6rem;
 }
 
-#dropdown, #employment{
+#dropdown,
+#employment{
   width: 100%;
 }
 
@@ -148,7 +158,8 @@ select option{
       border-radius: 0.5rem;
 }
 
-input#hour, input#number {
+input#hour,
+input#number {
 font-size: 1.5rem;
     padding: .5rem;
     border: 1px solid #000;
